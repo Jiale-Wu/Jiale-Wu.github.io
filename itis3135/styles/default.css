@@ -1,7 +1,12 @@
-body{
-    background-color: turquoise;
-
+html, body {
+    color: turquoise;
+    background-color: beige;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
+
 header{
     display: flex;
     justify-content: center;
@@ -26,25 +31,43 @@ nav{
     justify-content: center;
     
 }
-footer{
-    padding: 20px;
 
-    color:black;
-}
 .footer-links{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 .footer-text{
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     font-size: 1rem;
 }
 .selfie{
-    width: 200px;
+    width: 300px;
     height: auto;
 }
+.container,figcaption {
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.bulletpoint-list{
+    font-size: 17.5px;
+}
+
+.contract{
+
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size:50px;
+
+}
