@@ -29,9 +29,16 @@ nav{
     text-align: center;
     padding: 10px 0;
     justify-content: center;
-    
+    background-color: #2E294E;
+    border-radius: 10px;
 }
-
+nav a{
+    color: #EADEDA;
+}
+footer{
+    background-color: #2E294E;
+    border-radius: 10px;
+}
 .footer-links{
     display: flex;
     flex-wrap: wrap;
@@ -40,11 +47,20 @@ nav{
     margin-bottom: 20px;
     margin-top: 40px;
 }
-.footer-text{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 1rem;
+.footer-links a{
+    color: #EADEDA;
 }
+
+.footer-links a:hover {
+    background-color: #077187; /* Teal blue background on hover */
+    color: #F9627D; /* Light beige text on hover */
+    border-radius: 5px;
+}
+
+.footer-links a:active {
+    background-color: #055A6E; /* Slightly darker teal for active state */
+}
+
 .selfie{
     width: 300px;
     height: auto;
