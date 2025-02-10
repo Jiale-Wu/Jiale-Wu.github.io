@@ -1,6 +1,6 @@
 html{
-    color: turquoise;
-    background-color: beige;
+    color: #EADEDA;
+    background-color: #172A3A;
     height: 100%;
     margin: 0;
     display: flex;
@@ -30,7 +30,7 @@ nav{
     text-align: center;
     padding: 10px 0;
     justify-content: center;
-    background-color: #2E294E;
+    background-color: #74B3CE;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -40,17 +40,17 @@ nav{
     text-align: center;
     padding: 10px 0;
     justify-content: center;
-    background-color: #2E294E;
+    background-color: #74B3CE;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 nav a{
-    color: #EADEDA;
+    color: #172A3A;
 }
 footer{
-    background-color: #2E294E;
+    background-color: #09BC8A;
     border-radius: 10px;
 }
 .footer-links{
