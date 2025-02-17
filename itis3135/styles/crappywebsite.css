@@ -1,9 +1,12 @@
 html{
     font-style:sans-serif;
-    background-color: blue;
+    
 }
 header{
     font-style: sans-serif;
+}
+body{
+    background-image: url("/itis3135/images/butter.jpg");
 }
 .first-header{
     display: flex;
