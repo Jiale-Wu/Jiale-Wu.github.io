@@ -1,0 +1,40 @@
+html{
+    font-style:sans-serif;
+    background-color: blue;
+}
+header{
+    font-style: sans-serif;
+}
+.first-header{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+    background-color: #2E294E;
+    border-radius: 10px;
+    
+}
+.second-header{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+    background-color: #2E294E;
+    border-radius: 10px;
+    margin-top:50px;    
+}
+
+
+nav a{
+    color: bisque;
+}
+nav a:active{
+    color:beige;
+}
+nav a:hover{
+    color:beige;
+    background-color:lightslategrey;
+    border-radius: 5px;
+}
