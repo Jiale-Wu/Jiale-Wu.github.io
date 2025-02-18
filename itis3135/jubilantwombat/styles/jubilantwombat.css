@@ -7,8 +7,8 @@ html{
 }
 body{
     background-image: url("/itis3135/images/butter.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+
 }
 
 header{
@@ -19,12 +19,20 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-h1,p,h2{
+h1,h2{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:medium;
+
+}
+
 nav{
     display: flex;
     gap: 20px;
@@ -106,4 +114,10 @@ section{
     padding:auto;
     text-align: center;
     margin:10px 80px;
+}
+.whimsical-h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 
 }
