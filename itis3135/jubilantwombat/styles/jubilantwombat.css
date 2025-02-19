@@ -6,7 +6,7 @@ html{
     flex-direction: column;
 }
 body{
-    background-image: url("/itis3135/images/butter.jpg");
+    background-image: url('../butter.jpg');
     
 
 }
