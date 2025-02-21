@@ -34,8 +34,9 @@ strong{
     color:#2E294E
 }
 .web-sum{
-    
-
+    text-align: left;
+    padding-left: 5em;
+    padding-right: 10em;
     font-size: large;
     
 }
