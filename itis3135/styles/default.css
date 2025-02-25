@@ -60,14 +60,16 @@ html, body {
 
 }
 
-header{
+/*header{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
-}
+
+}*/
 h1,p,h2{
     display: flex;
     justify-content: center;
@@ -99,7 +101,6 @@ nav{
     padding: 10px 0;
     justify-content: center;
     background-color: #2E294E;
-    
 }
 
 
