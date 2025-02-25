@@ -19,7 +19,15 @@ html, body {
 /*for small devices*/
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     html, body {
-        all:initial;
+        color:steelblue;
+        background-color: beige;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-family:sans-serif;
+        width: 90%;
+        margin: 0 auto;
     }
     /* Foundational Three */
     main, .maincontainer {
@@ -27,6 +35,7 @@ html, body {
         margin: 0 auto;
         max-width: 1200px;
     }
+
 }
 
 header{
