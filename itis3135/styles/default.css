@@ -6,6 +6,9 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family:sans-serif;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 header{
