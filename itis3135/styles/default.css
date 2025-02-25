@@ -10,6 +10,24 @@ html, body {
     width: 90%;
     margin: 0 auto;
 }
+/*for laptops*/
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    #colorbox {
+        background-color:yellow;
+    }
+}
+/*for small devices*/
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    html, body {
+        all:initial;
+    }
+    /* Foundational Three */
+    main, .maincontainer {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
 
 header{
     display: flex;
