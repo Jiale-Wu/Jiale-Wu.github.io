@@ -5,7 +5,6 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family:sans-serif;
-    margin: 0 auto;
 }
 
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
@@ -17,12 +16,12 @@ html, body {
         display: flex;
         flex-direction: column;
         font-family:sans-serif;
-        margin: 0 auto;
+
         text-align: center;
     }
     /* Foundational Three */
     main, .maincontainer {
-        margin: 0 auto;
+        margin: auto;
         max-width: fit-content;
     }
 }
@@ -36,12 +35,10 @@ html, body {
         display: flex;
         flex-direction: column;
         font-family:sans-serif;
-        margin: 0 auto;
         text-align: center;
     }
     /* Foundational Three */
     main, .maincontainer {
-        margin: 0 auto;
         max-width: fit-content;
     }
 }
@@ -55,11 +52,9 @@ html, body {
         display: flex;
         flex-direction: column;
         font-family:sans-serif;
-        margin: 0 auto;
     }
     /* Foundational Three */
     main, .maincontainer {
-        margin: 0 auto;
         max-width: fit-content;
     }
 
@@ -104,7 +99,7 @@ nav{
     padding: 10px 0;
     justify-content: center;
     background-color: #2E294E;
-
+    
 }
 
 
