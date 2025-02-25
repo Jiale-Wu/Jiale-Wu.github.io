@@ -17,7 +17,7 @@ html, body {
         flex-direction: column;
         font-family:sans-serif;
 
-        text-align: center;
+
     }
     /* Foundational Three */
     main, .maincontainer {
@@ -35,7 +35,7 @@ html, body {
         display: flex;
         flex-direction: column;
         font-family:sans-serif;
-        text-align: center;
+
     }
     /* Foundational Three */
     main, .maincontainer {
@@ -53,12 +53,18 @@ html, body {
         display: flex;
         flex-direction: column;
         font-family:sans-serif;
+        
     }
     /* Foundational Three */
     main, .maincontainer {
         margin: 0 auto;
         max-width: fit-content;
     }
+    .selfie{
+        width: auto;
+        height: auto;
+    }
+
 
 }
 
