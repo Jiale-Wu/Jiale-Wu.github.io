@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #343434;
+            color:#FFE66D
+            
+        }
+        header{
+            background-color: #6CA6C1;
+            color: #FFE66D;
+            text-align: center;
+            padding-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        nav {
+            gap: 10px; /* Adjust spacing */
+        }
+        nav span {
+            display: inline-block;
+            padding: 0 10px;
+            border-right: 1px solid black;
+        }
+        nav span:last-child {
+        border-right: none;
+        }
+        a {
+            color: #FFE66D;
+            text-decoration: none;
+            margin: 0 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: #6CA6C1;
+            display: none;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+            margin-top: 30px;
+            padding: 15px;
+        }
+        section.active {
+            display: block;
+        }
+        footer{
+            background-color: #6CA6C1;
+            color: #FFE66D;
+            text-align: center;
+            margin-top: 30px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: left;
+        }
+
+
+
+    </style>
+</head>
+<header>
+    <h1>Jay's Favorite Sport</h1>
+    <p><i></i></p>
+    <nav>
+        <span><a onclick="showSection('home')">Home</a></span>
+        <span><a onclick="showSection('about')">About Volleyball</a></span>
+        <span><a onclick="showSection('when')">When</a></span>
+        <span><a onclick="showSection('where')">Favorite Spots</a></span>
+        <span><a onclick="showSection('how')">How</a></span>
+        <span><a onclick="showSection('why')">Why Do I Play</a></span>     
+    </nav>
+    
+</header>
+<body>
+    <section id="home" class="active">
+        <h2>Welcome to my Hobby Page!</h2>
+        <p>
+            Volleyball is a hobby that I picked up almost 2 years ago.
+        </p>
+        <p></p>
+    </section>
+    <section id="about">
+        <p>brrrrr</p>
+    </section>
+    <section id="when" >
+        <p>test</p>
+    </section>
+    <section id="where">
+        <p></p>
+    </section>
+    <section id="how">
+
+    </section>
+    <section id="why">
+
+    </section>
+</body>
+
+<footer>
+    <p class="footer-links"><a href="jaywultimate.com/index.html">Wu Enterprise© 2025</a></p>
+    <p class="footer-links">Designed by: Jay Wu,<a href="https://www.freecodecamp.org/certification/jwu45/responsive-web-design">Certified in Responsive Web Design</a></p>
+    
+        <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html" class="validation-link">
+            <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css" class="validation-link">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        
+
+    
+
+</footer>
+<script>
+    document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
+<script src="script.js"></script>
+
+</html>
