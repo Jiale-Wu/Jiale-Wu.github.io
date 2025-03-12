@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
     <style>
         html{
@@ -16,7 +18,8 @@
             color: #FFE66D;
             text-align: center;
             padding-bottom: 10px;
-            border-radius: 5px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
         }
 
         nav {
@@ -45,87 +48,132 @@
             background-color: #6CA6C1;
             display: none;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, .6);
-            margin-top: 30px;
             padding: 15px;
         }
-        section.active {
+        .active {
             display: block;
         }
         footer{
             background-color: #6CA6C1;
             color: #FFE66D;
             text-align: center;
-            margin-top: 30px;
             padding: 5px;
-            border-radius: 5px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
         }
         h2{
             text-align: left;
         }
-
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        figure{
+            text-align: center;
+        }
 
 
     </style>
+
+        <script>
+            document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="script.js"></script>
 </head>
-<header>
-    <h1>Jay's Favorite Sport</h1>
-    <p><i></i></p>
-    <nav>
-        <span><a onclick="showSection('home')">Home</a></span>
-        <span><a onclick="showSection('about')">About Volleyball</a></span>
-        <span><a onclick="showSection('when')">When</a></span>
-        <span><a onclick="showSection('where')">Favorite Spots</a></span>
-        <span><a onclick="showSection('how')">How</a></span>
-        <span><a onclick="showSection('why')">Why Do I Play</a></span>     
-    </nav>
-    
-</header>
+
+
 <body>
+    <header>
+        <h1>Jay's Favorite Sport</h1>
+        <p><i></i></p>
+        <nav>
+            <span><a onclick="showSection('home')">Home</a></span>
+            <span><a onclick="showSection('about')">About Volleyball</a></span>
+            <span><a onclick="showSection('when')">When</a></span>
+            <span><a onclick="showSection('where')">Favorite Spots</a></span>
+            <span><a onclick="showSection('how')">How</a></span>
+            <span><a onclick="showSection('why')">Why Do I Play</a></span>     
+        </nav>
+        
+    </header>
+
     <section id="home" class="active">
         <h2>Welcome to my Hobby Page!</h2>
         <p>
-            Volleyball is a hobby that I picked up almost 2 years ago.
+            Volleyball is a game played by two teams of six players each, in which an inflated ball is volleyed over a high net. 
+            Each team tries to make the ball touch the court within the opposing side's playing areas before it can be returned. 
+            A team is allowed to touch the ball three times before returning it. The catch is that you can only make contact with
+            the ball for a very brief amount of time which makes an interesting premise. 
         </p>
-        <p></p>
+
+        <figure>
+            <img src="images/stock-volleyball-image.jpeg" alt="stock volleyball image">
+            <figcaption><i>stock volleyball image</i></figcaption>
+        </figure>
+        <p>
+            Mikasa is one of the most famous volleyball brands. It's even used in the professional settings like in the 
+            FIVB (Fédération Internationale de Volleyball). Personally, this is my preferred brand as the ball is incredibly aerodynamic
+            and has a lot of grip allowing you to generate massive spin.
+        </p>
     </section>
     <section id="about">
-        <p>brrrrr</p>
+        <h2>About Me</h2>
+        <p>
+            Volleyball is a hobby that I picked up almost 2 years ago. 
+            It started off as a desire to play after consuming a hefty amount of 
+            volleyball content online whether it be professional volleyball clips or an anime like Haikyuu.
+            While I've been busy with schoolwork, I still try and find time to play volleyball at least once a week.
+
+
+        </p>
+        <figure>
+            <img src="images/me-volleyball-beginning.png" alt="Me when I first started playing volleyball">
+            <figcaption><i>This was when I first started playing volleyball at UNC Charlotte</i></figcaption>
+        </figure>
+        <p>
+            When I first started, I was reluctant to play due to my lack of skill. However, my friends eventually convinced me to go
+            to a nearby community center that had a volleyball session once a week. needless to say, I fell in love with volleyball.
+            Because of how we only had volleyball once a week, I was always looking forward to playing.
+        </p>
     </section>
     <section id="when" >
-        <p>test</p>
+        <h2>When Do I Usually Go</h2>
+        <p>
+
+        </p>
     </section>
     <section id="where">
+        <h2>Where Do I Usually Go</h2>
         <p></p>
     </section>
     <section id="how">
-
+        <h2>What You Need To Play</h2>
     </section>
     <section id="why">
+        <h2>Why You Should Play</h2>
 
     </section>
+
+    <footer>
+        <p class="footer-links"><a href="jaywultimate.com/index.html">Wu Enterprise© 2025</a></p>
+        <p class="footer-links">Designed by: Jay Wu,<a href="https://www.freecodecamp.org/certification/jwu45/responsive-web-design">Certified in Responsive Web Design
+    
+            </a>
+        </p>
+        
+            <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html" class="validation-link">
+                <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css" class="validation-link">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+            
+    </footer>
+
 </body>
 
-<footer>
-    <p class="footer-links"><a href="jaywultimate.com/index.html">Wu Enterprise© 2025</a></p>
-    <p class="footer-links">Designed by: Jay Wu,<a href="https://www.freecodecamp.org/certification/jwu45/responsive-web-design">Certified in Responsive Web Design</a></p>
-    
-        <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html" class="validation-link">
-            <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css" class="validation-link">
-            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-        </a>
-        
 
-    
-
-</footer>
-<script>
-    document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-    document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-</script>
-<script src="script.js"></script>
 
 </html>
