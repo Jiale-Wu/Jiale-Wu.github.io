@@ -18,6 +18,7 @@
             color: #FFE66D;
             text-align: center;
             padding-bottom: 10px;
+            padding-top:5px;
             border-top-right-radius: 50px;
             border-top-left-radius: 50px;
         }
@@ -65,13 +66,24 @@
             text-align: left;
         }
         img {
-            max-width: 100%;
+            max-width: 50%;
+            max-height: 50%;
             height: auto;
             border-radius: 5px;
         }
         figure{
             text-align: center;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
 
 
     </style>
@@ -92,9 +104,9 @@
             <span><a onclick="showSection('home')">Home</a></span>
             <span><a onclick="showSection('about')">About Volleyball</a></span>
             <span><a onclick="showSection('when')">When</a></span>
-            <span><a onclick="showSection('where')">Favorite Spots</a></span>
-            <span><a onclick="showSection('how')">How</a></span>
-            <span><a onclick="showSection('why')">Why Do I Play</a></span>     
+            <span><a onclick="showSection('where')">Where do I Play</a></span>
+            <span><a onclick="showSection('how')">What You Need to Play</a></span>
+            <span><a onclick="showSection('why')">Why You Should Play</a></span>     
         </nav>
         
     </header>
@@ -109,7 +121,7 @@
         </p>
 
         <figure>
-            <img src="images/stock-volleyball-image.jpeg" alt="stock volleyball image">
+            <img src="images/stock-volleyball-image.jpg" alt="stock volleyball image">
             <figcaption><i>stock volleyball image</i></figcaption>
         </figure>
         <p>
@@ -141,19 +153,97 @@
     <section id="when" >
         <h2>When Do I Usually Go</h2>
         <p>
+            Due to my schedule and workload, I usually like to play Monday Wednesday and Friday night. 
+            
+        </p>
+        <p>
+            Since we are all Charlotte students (right...?) I'd like to provide great times to play depending on what you'd like to do.
+        </p>
+        <table>
+            <tr>
+                <th>Solo/Small Group Practice</th>
+                <th>Recreation Play</th>
+                <th>Beach</th>
+            </tr>
+            <tr>
+                <td>Saturday 9AM-9PM</td>
+                <td>Weekdays 4PM-10PM</td>
+                <td>Weekdays 4PM-10PM</td>
+            </tr>
+            <tr>
+                <td>Sunday 11AM-11PM</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Weekdays 6AM-2PM</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
 
+        </table>
+        <p>
+            If you frequently go to UREC, you will quickly notice a pattern with how many people are on the court at what time. The busiest
+            times are usually 6-10 which is when most students are done with classes. It can be intimidating to ask people to join their teams but 
+            trying your best is what matters!
         </p>
     </section>
     <section id="where">
         <h2>Where Do I Usually Go</h2>
-        <p></p>
+        <p>
+            I don't live in Charlotte so when I am back at home, I usually play in my backyard or at a community center nearby.
+            There are also community centers in Raleigh that I go to as well so I can get multiple days of volleyball in.
+        </p>
+        <figure>
+            <img src="images/Clayton-Community-Center.jpg" alt="picture of the community center near my home">
+            <figcaption><i>community center</i></figcaption>
+        </figure>
+        <p>
+            When I'm in Charlotte, I like to go to the University Recreation Center. Personally, this is a much more convenient spot because
+            I can go anytime I'm free instead of being restricted to a date and time. The people at the UREC are also a lot more skilled so 
+            I learn alot more than playing at the community center.
+        </p>
+
     </section>
     <section id="how">
         <h2>What You Need To Play</h2>
+        <p>There aren't a lot of things you need to play casually. The bare minimum is a pair of sneakers, a volleyball, and 
+            a net. However, if you wish to have a better, I recommend basketball shoes for more grip on the court. This will prevent you
+            from slipping and provide comfort during intense matches. Another one is a high quality volleyball. A good brand is the Mikasa.
+            A high quality ball goes for around 70 dollars on Amazon which can be a big investment, but, you will definitely get a better
+            experience from using a professional ball. While I RECOMMEND the brand Mikasa, any official ball brand will do.
+        </p>
+        <figure>
+            <img src="images/Official-Ball-Game.jpg" alt="volleyball">
+            <figcaption>The official game ball for FIVB</figcaption>
+        </figure>
+        <p>While the Mikasa brand is what I recommend when you are playing in-doors, sand volleyball is a different story. One good brand
+            is the Wilson brand. You may wonder what the difference between in-door and out-door balls is, the difference is the material.
+            Out-door balls are more durable and has more grip than the in-door ball allowing different playstyles than in-door volleyball.
+            When you play beach, you have less mobility so the ball caters a more creative and cunning playstyle.
+        </p>
+        <figure>
+            <img src="images/Wilson-Volleyball.jpg" alt="Wilson Volleyball">
+            <figcaption>Wilson Volleyball</figcaption>
+        </figure>
+
     </section>
     <section id="why">
         <h2>Why You Should Play</h2>
-
+        <p>Volleyball, on a surface level, is often considered an easy sport. Anyone who is somewhat athletic can jump high and hit the
+            ball hard. However, there is so much more to volleyball than just that. Outside of spiking the ball, you can set and pass. These
+            are the hardest mechanics of volleyball. Being able to slowly learn the skills to be able to control where the ball goes with just
+            your arms is a very exciting feeling and you can clearly feel yourself becoming better. Not to mention, similar to soccer, there are 
+            multiple ways you can hit the ball allowing the ball to move a certain way. whether it be top spin, side spin, or no spin, these are
+            just a few things that you can learn and they're most definitely not easy.
+        </p>
+        <figure>
+            <img class="man-volleyball" src="images/steven-abraham-WYJNl4D-H7Y-unsplash.jpg" alt="">
+        </figure>
+        <p>
+            Another reason is it can be a very good way to cool off after a work out or burn a few calories. Constantly jumping can
+            improve various parts of your body including your arms, back, and legs.
+        </p>
     </section>
 
     <footer>
