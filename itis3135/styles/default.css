@@ -44,10 +44,7 @@ html, body {
 
     }
     /* Foundational Three */
-    main, .maincontainer {
-        margin: 0 auto;
-        max-width: fit-content;
-    }
+
 }
 /*for small devices*/
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
@@ -76,16 +73,7 @@ html, body {
 
 }
 
-/*header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
 
-}*/
 h1,p,h2{
     display: flex;
     justify-content: center;
@@ -93,13 +81,16 @@ h1,p,h2{
     
 }
 h3{
-    text-align: left;
-    padding-left: 5%;
+    text-align: left;  
+    padding-left: 50px; 
+
 }
-.web-eval-list{
+
+.list{
     text-align: left;
     padding-left: 10%;
 }
+
 strong{
     color:#2E294E
 }
@@ -176,4 +167,54 @@ section{
     margin: 20px auto;
     font-size:50px;
 
+}
+/* table.html styling*/
+ol {
+    padding-left: 75px;
+
+    list-style-position: inside;
+}
+th {
+    background-color: steelblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Header row darker */
+thead tr {
+    background-color: steelblue;
+    color: white;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d9e2ef;
+}
+
+/* Borders and padding */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style figure captions */
+figcaption {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
 }
