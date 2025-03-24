@@ -218,3 +218,8 @@ figcaption {
     text-align: center;
     margin-bottom: 10px;
 }
+.button{
+    background-color: #2E294E;
+    color: #077187;
+    border-radius: 5px;
+}
