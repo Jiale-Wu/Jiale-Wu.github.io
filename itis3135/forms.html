@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Wu || Jubilant Wombat || ITIS3135 Home </title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body class=".forms-body">
+    <header>
+        <h1>Jay Wu's Jubilant Wombat || ITIS 3135</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+        
+
+    
+    <main class="forms-main">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Services Interested In:</legend>
+                <input type="checkbox" id="service1" name="services" value="web-design">
+                <label for="service1">Web Design</label>
+                <input type="checkbox" id="service2" name="services" value="seo">
+                <label for="service2">SEO Optimization</label>
+                <input type="checkbox" id="service3" name="services" value="marketing">
+                <label for="service3">Digital Marketing</label>
+            </fieldset>
+            <br>
+
+            <label for="budget">Estimated Budget:</label>
+            <select id="budget" name="budget" required>
+                <option value="">Select one</option>
+                <option value="500">$500 - $1,000</option>
+                <option value="1000">$1,000 - $5,000</option>
+                <option value="5000">$5,000+</option>
+            </select>
+            <br>
+
+            <button type="reset" class="forms-button">Reset</button>
+            <button type="submit" class="forms-button">Submit</button>
+        </form>
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

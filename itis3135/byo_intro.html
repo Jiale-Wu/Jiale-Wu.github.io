@@ -3,109 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Wu || Jubilant Wombat || ITIS3135 Home </title>
+    <title>Jay Wu || Jubilant Wombat || ITIS 3135 || BYO Intro</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
     <script src="scripts/survey.js"></script>
-    <style>
-        form{
-            padding-left:50px
-        }
-    </style>
+
 </head>
 <body>
-    <header>
+    <header class="title-name">
         <h1>Jay Wu's Jubilant Wombat || ITIS 3135</h1>
+
         <div data-include="components/header.html"></div>
     </header>
-        
+    <div class="gold-line"></div>
     <main>
+        <h2>ITIS 3135 BYO Introduction</h2>
+
+        <div id="form-container">
         <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
-
-        <form id="introForm" onsubmit="return validateForm()">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-          <br><br>
-      
-          <label for="mascot">Mascot:</label>
-          <input type="text" id="mascot" name="mascot" placeholder="Your Mascot" required>
-          <br><br>
-      
-          <label for="image">Image:</label>
-          <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
-          <br><br>
-      
-          <label for="imageCaption">Image Caption:</label>
-          <input type="text" id="imageCaption" name="imageCaption" placeholder="Your Image Caption"required>
-          <br><br>
-      
-          <label for="personalBackground">Personal Background:</label>
-          <textarea id="personalBackground" name="personalBackground" placeholder="Personal Background" required></textarea>
-          <br><br>
-      
-          <label for="professionalBackground">Professional Background:</label>
-          <textarea id="professionalBackground" name="professionalBackground" required>Professional Background</textarea>
-          <br><br>
-      
-          <label for="academicBackground">Academic Background:</label>
-          <textarea id="academicBackground" name="academicBackground" placeholder="Academic Background" required></textarea>
-          <br><br>
-      
-          <label for="webDevBackground">Background in Web Development:</label>
-          <textarea id="webDevBackground" name="webDevBackground" placeholder="Web Dev Background" required></textarea>
-          <br><br>
-      
-          <label for="platform">Primary Computer Platform:</label>
-          <input type="text" id="platform" name="platform" placeholder="Your Platform" required>
-          <br><br>
-      
-          <label for="courses">Courses currently taking:</label>
-          <div >
-            <input type="text" name="course" class="course" placeholder="Enter a course" id="courses">
-          </div>
-          <button type="button" onclick="addCourseField()">Add Course</button>
-          <br><br>
-      
-          <label for="funnyThing">Funny thing?</label>
-          <input type="text" id="funnyThing" name="funnyThing" placeholder="I slipped and fell">
-          <br><br>
-      
-          <label for="additionalInfo">Anything else?</label>
-          <input type="text" id="additionalInfo" name="additionalInfo">
-          <br><br>
-      
-          <label>
-            <input type="checkbox" id="agreement" name="agreement" required>
-            I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
-          </label>
-          <br><br>
-      
-          <input type="submit" value="Submit" class="button">
-          <input type="reset" value="Reset" onclick="resetForm()" class="button">
-        </form>
-      
-        <div id="formData" style="display:none;">
-          <h3>Your BYO Intro Page</h3>
-          <p><strong>Name:</strong> <span id="displayName"></span></p>
-          <p><strong>Mascot:</strong> <span id="displayMascot"></span></p>
-          <p><strong></strong> <img id="displayImage" alt="Image" width="200"></p>
-          <p><strong>Image Caption:</strong> <span id="displayImageCaption"></span></p>
-          <p><strong>Personal Background:</strong> <span id="displayPersonalBackground"></span></p>
-          <p><strong>Professional Background:</strong> <span id="displayProfessionalBackground"></span></p>
-          <p><strong>Academic Background:</strong> <span id="displayAcademicBackground"></span></p>
-          <p><strong>Background in Web Development:</strong> <span id="displayWebDevBackground"></span></p>
-          <p><strong>Primary Computer Platform:</strong> <span id="displayPlatform"></span></p>
-          <p><strong>Courses:</strong> <span id="displayCourses"></span></p>
-          <p><strong>Funny Thing:</strong> <span id="displayFunnyThing"></span></p>
-          <p><strong>Anything Else:</strong> <span id="displayAdditionalInfo"></span></p>
-          <br>
-          <a href="#" onclick="resetForm()">Reset the Form</a>
-        </div>
+                
+                <form id="intro-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mascot">Mascot:</label>
+                        <input type="text" id="mascot" name="mascot" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="image">Image (PNG or JPG only):</label>
+                        <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="imageCaption">Image Caption:</label>
+                        <input type="text" id="imageCaption" name="imageCaption" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="personalBackground">Personal Background:</label>
+                        <textarea id="personalBackground" name="personalBackground" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="professionalBackground">Professional Background:</label>
+                        <textarea id="professionalBackground" name="professionalBackground" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="academicBackground">Academic Background:</label>
+                        <textarea id="academicBackground" name="academicBackground" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="webdevBackground">Background in Web Development:</label>
+                        <textarea id="webdevBackground" name="webdevBackground" rows="3" required>This is my first time taking web development but I am looking forward to 
+                            learning about all the things that I can implement into my future/current projects.</textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="platform">Primary Computer Platform:</label>
+                        <input type="text" id="platform" name="platform" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Courses Currently Taking:</label>
+                        <div id="courses-container">
+                            <div class="course-entry">
+                                <input type="text" class="course-name-input" name="courses[]" placeholder="Course name">
+                                <input type="text" class="course-desc-input" name="courseDescriptions[]" placeholder="Course Description">
+                                <button type="button" class="delete-course-btn">Delete</button>
+                            </div>
+                        </div>
+                        <button type="button" id="add-course-btn">Add Course</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="funnyThing">Funny Thing:</label>
+                        <textarea id="funnyThing" name="funnyThing" rows="2"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="anythingElse">Anything Else:</label>
+                        <textarea id="anythingElse" name="anythingElse" rows="2"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+            
+            <div id="result-container" style="display: none;">
+                <div id="intro-content"></div>
+                <button id="reset-btn">Reset</button>
+            </div>
     </main>
-
     <footer>
         <div data-include="components/footer.html"></div>
-
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>

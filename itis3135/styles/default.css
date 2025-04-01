@@ -159,6 +159,7 @@ section{
 }
 
 .bulletpoint-list{
+    color: steelblue;
     font-size: 17.5px;
 }
 
@@ -222,4 +223,45 @@ figcaption {
     background-color: #2E294E;
     color:#EADEDA;
     border-radius: 5px;
+}
+.project-figure a{
+    font-size: small;
+    color:steelblue;
+}
+a:hover{
+    color:#2E294E;
+}
+a:active{
+    color: #077187;
+}
+/*styling for forms.html*/
+
+.forms-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.forms-main {
+    width: 50%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+input, select {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.forms-button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.forms-button:hover {
+    background-color: #555;
 }
