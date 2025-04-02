@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Overview: HTML Horizon</title>
-    <link rel="stylesheet" href="../styles/default.css  "> 
+    
 
     <style>
-
-        hr {
+        body{
+            font-family: sans-serif;
+            margin:10px;
+            background-color: darkgray;
+        }
+        h1{
+            align-content: center;
+            margin-left:25%;
+            
+        }
+        h3{
+            margin: auto;
+        }
+        hr {    
             margin: 2em 0;
+            border-color: black;
         }
-        .description{
-        margin-right:75%;
-        }
-        .title{
-        margin: auto;
-        font-size: x-large;
-        }
+
     </style>
 </head>
 <body>
@@ -31,11 +38,11 @@
     <h2>Project Overview</h2>
     <ul>
         <li>
-            <strong>Describe your application and its purpose:</strong> The application will be a way for customers to freely access the menu and prices.
-             It can also provide useful information about the establishment. 
+            <strong>Describe your application and its purpose:</strong> The application will be a way for customers 
+            to freely access the menu and prices. It can also provide useful information about the establishment. 
         </li>
         <li>
-            <strong>Intended users of the website:</strong> Customers that frequent the restaurant
+            <strong>Intended users of the website:</strong> Customers that visit or want to check out the restaurant
         </li>
         <li>
             <strong>Overview of the content of the website:</strong>
@@ -43,7 +50,6 @@
             <ul>
                 <li>The store menu along with the prices that are attached to each item</li>
                 <li>contact information to the owner/store manager</li>
-                <li></li>
             </ul>
         </li>
     </ul>
@@ -53,7 +59,7 @@
     <h2>Client Information</h2>
     <ul>
         <li><strong>Name of the client:</strong> [Private]</li>
-        <li><strong>Organization/Institute/Business the client is associated with:</strong> Fast Food Chain</li>
+        <li><strong>Organization/Institute/Business the client is associated with:</strong> Fastfood Chain</li>
         <li><strong>Client’s valid email address:</strong> [Private]</li>
         <li><strong>Client’s phone number:</strong> [Private]</li>
     </ul>
@@ -83,9 +89,9 @@
     </figure>
     <p class="description">The planned pages are:</p>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>About</li>
         <li></li>
     </ul>
 
@@ -93,9 +99,25 @@
 
     <h2>Page Design</h2>
     <p class="description">Details for each page listed in the site map:</p>
-
+    <h3>Page 1: Home (index.html)</h4>
     <section>
         
+        <ul class="page-design-list">
+            <li><strong>Purpose of the page:</strong></li>
+            <li><strong>Audience/Users of page:</strong> Frequent customers as well as first time customers.</li>
+            <li><strong>What will be content of the page?</strong>
+                <ul>
+                    <li>Welcome message, quick summary of what the restaurant provides.</li>
+                    <li>Navigation bar that links to other pages on the website like the menu.</li>
+                    <li>Real reviews from Yelp and Google.</li>
+                    <li><strong>Is this a page where you are asking users to enter data on the page?</strong> No.</li>
+                    <li><strong>Will those data fields need any validations (if any)?</strong> N/A.</li>
+                    <li><strong>Will the page contain buttons or hyperlinks or drop downs?</strong> Yes, drop downs will be included.</li>
+                    <li><strong>What actions will happen in the page?</strong> Navigation to other site pages (modules).</li>
+                    <li><strong>Any special notes regarding the page (if any)?</strong> Fast and easy access desired pages.</li>
+                </ul>
+            </li>
+        </ul>
     </section>
 
 
@@ -105,12 +127,12 @@
     <p >The following dynamic functionalities will be implemented using JavaScript/jQuery to enhance user interaction </p>
     <ul>
         <li>
-            <strong>1. Interactive Code Examples:</strong>
+            <strong>1. Price Calculation:</strong>
             <ul>
-                <li><strong>Description:</strong> Allow users to easily toggle between viewing HTML code snippets and seeing the immediate rendered output on the page. This might involve using jQuery's `.toggle()` or similar methods triggered by buttons or tabs.</li>
-                <li><strong>Webpage(s):</strong> Basic Tags (tags.html), Lists and Tables (lists_tables.html), Simple Forms (forms.html).</li>
-                <li><strong>Reason:</strong> To visually connect HTML syntax with its browser output, reinforcing learning through immediate cause-and-effect demonstration.</li>
-                <li><strong>Example URL Inspiration:</strong> The concept used in W3Schools' "Try it Yourself" editor or MDN's interactive examples.</li>
+                <li><strong>Description:</strong>Allows users to select their dishes and modifications and see the prices of the said dishes</li>
+                <li><strong>Webpage(s)</strong>It will be features in the menu.html</li>
+                <li><strong>Reason:</strong> To allow a more convenient time for customers to see what prices are on what dishes as well as hypothetical prices with modifications to their.</li>
+                <li><strong>Example URL Inspiration:</strong> Websites like Amazon where they show the prices of multiple items.</li>
             </ul>
         </li>
         <li>
@@ -154,8 +176,7 @@
     <hr>
 
     <footer>
-        <p>Document generated on: March 30, 2025</p>
-        </footer>
+    </footer>
 
 </body>
 </html>

@@ -135,13 +135,13 @@ footer{
 }
 
 .footer-links a:hover {
-    background-color: #077187; /* Teal blue background on hover */
-    color: #EADEDA; /* Light beige text on hover */
+    background-color: #077187; 
+    color: #EADEDA;
     border-radius: 5px;
 }
 
 .footer-links a:active {
-    background-color: #055A6E; /* Slightly darker teal for active state */
+    background-color: #055A6E; 
 }
 
 .selfie{
@@ -264,4 +264,7 @@ input, select {
 }
 .forms-button:hover {
     background-color: #555;
+}
+.page-design-list{
+    margin-right: 20%;
 }
