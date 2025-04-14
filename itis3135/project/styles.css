@@ -25,7 +25,7 @@ nav{
     border-radius: 10px;
     text-align: center;
 }
-a{
+.links{
     background-color: antiquewhite;
     border-radius: 5px;
     color: #001A23;
@@ -53,4 +53,68 @@ display: flex;
 justify-content: space-between;
 border-bottom: 1px dotted #ccc;
 padding: 0.5rem 0;
+}
+
+.image {
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+    .image img {
+        display: block;
+    }
+
+    .image.left, .image.right {
+        max-width: 40%;
+    }
+
+        .image.left img, .image.right img {
+            width: 100%;
+        }
+
+    .image.left {
+        float: left;
+        margin: 0 2rem 2rem 0;
+        top: 0.75rem;
+    }
+
+    .image.right {
+        float: right;
+        margin: 0 0 2rem 2rem;
+        top: 0.75rem;
+    }
+
+    .image.fit {
+        display: block;
+        margin: 0.5rem 0 2.5rem;
+        width: 100%;
+    }
+
+        .image.fit:first-child {
+            margin-top: 0;
+        }
+
+        .image.fit img {
+            width: 100%;
+        }
+
+    .image.main {
+        display: block;
+        margin: 4rem 0;
+        width: 100%;
+    }
+
+        .image.main:first-child {
+            margin-top: 0;
+        }
+
+        .image.main img {
+            width: 100%;
+        }
+.phone{
+    text-align: center;
+}
+.number{
+    text-align: center;
 }
