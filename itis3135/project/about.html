@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ninja Japan</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <header>
+        <div data-include="components/header.html"></div>
         <h1>Ninja Japan</h1>
-        <nav>
-            <a  class="links" href="index.html">Home Page</a><a href="about.html" class="links">About</a><a href="contact.html" class="links">Contact</a>
-        </nav>
+
+            <nav>
+                <div class="dropdown">
+                    <button>Menu</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+            </nav>
     </header>
     <body>
         <h1>About</h1>
@@ -24,7 +34,7 @@
     </body>
 
     <footer>
-
+        <script src="project.js"></script>
     </footer>
 </body>
 </html>
